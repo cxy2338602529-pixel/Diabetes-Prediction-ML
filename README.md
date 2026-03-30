@@ -37,14 +37,8 @@ Methodology
 	•	The Random Forest model performed best after tuning
 	•	Used 5-fold cross-validation to assess model stability
 	•	Visualized performance using ROC and Precision-Recall curves
-<p align="center">
-  < img src="roc_curve.png" width="400" alt="ROC Curve" />
-  < img src="pr_curve.png" width="400" alt="Precision-Recall Curve" />
-</p >
-<p align="center">
-  <i>Figure 1: ROC and PR Curves demonstrating the high classification performance of the optimized Random Forest model (Precision > 0.9).</i>
-</p >
-
+![CV Results](roc_curve.png,pr_curve.png)
+*Figure 5: Precision-Recall (PR) curve highlighting the balance between precision and sensitivity.
 ⸻
 
 4. Model Interpretation
@@ -53,10 +47,8 @@ Methodology
 	•	Examined feature importance from the Random Forest model
     •	Used SHAP to understand how each feature influences predictions
 	•	Provided both global and individual-level explanations
-<div align="center">
-  < img src="shap_summary.png" width="600" title="SHAP Summary Plot">
-  <p><b>Global Interpretability:</b> Higher glucose levels significantly increase the predicted probability of diabetes.</p >
-</div>
+![CV Results](shap_summary.png)
+*Figure 6: SHAP summary plot providing clinical insights into how each feature (e.g., Glucose, BMI) contributes to the prediction.
 ⸻
 
 Key Results
